@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.half-and-half {
+    display: block;
+    height: 100vh;
+}
+
+.half-and-half > div {
+    width: 100%;
+    flex: 0 0 100%;
+    display: block;
+}
+
+.half-and-half > div > div {
+    padding: 3rem;
+}
+
+.half-and-half > div:first-child {
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    min-height: 45vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.5rem 0;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 4rem;
+    background-image: url(../img/galaxy.gif);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.button {
+    display: inline-block;
+    background-color: aquamarine;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+@media( min-width: 768px ) {
+    .half-and-half {
+        display: flex;
+    }
+    .half-and-half > div {
+        width: 50%;
+        flex: 0 0 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
